@@ -1,15 +1,17 @@
 {
-  "name": "@00jfb00/config",
+  "name": "@00jfb00/mf-config",
   "author": "Julio Brandao",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/00jfb00/mf-config.git"
+    "url": "git://github.com/00jfb00/mf-config.git"
   },
-  "homepage": "https://bitbucket.org/00jfb00/mf-config#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "main": "root-application.js",
   "license": "ISC",
   "version": "1.0.0",
-  "description": "",
+  "description": "[![CircleCI](https://circleci.com/gh/react-microfrontends/root-config.svg?style=svg)](https://circleci.com/gh/react-microfrontends/root-config)",
   "scripts": {
     "serve": "webpack-dev-server --port 9000",
     "start": "node server.js",
@@ -36,12 +38,30 @@
     "redux-devtools-extension": "^2.13.8"
   },
   "dependencies": {
-    "@00jfb00/planets": "1.0.9",
+    "@00jfb00/mf-planets": "1.0.9",
+    "@00jfb00/mf-people": "1.0.0",
+    "@00jfb00/mf-root": "1.0.0",
     "react-redux": "^7.2.0",
     "redux": "^4.0.5",
     "redux-persist": "^6.0.0",
     "redux-thunk": "^2.3.0",
     "single-spa": "4.4.2",
     "zone.js": "0.10.2"
-  }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/00jfb00/mf-planets/issues"
+  },
+  "homepage": "https://github.com/00jfb00/mf-config#readme"
 }

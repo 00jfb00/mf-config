@@ -24,21 +24,21 @@ function showExcept(routes) {
 
 singleSpa.registerApplication(
   'mf-root',
-  () => import("../root/dist/mf-root"),
+  () => import("@00jfb00/mf-root"),
   () => true,
   { Reducer }
 );
 
 singleSpa.registerApplication(
   '@mf/people',
-  () => import("../people/dist/mf-people"),
+  () => import("@00jfb00/mf-people"),
   showWhenPrefix(['/people']),
   { Reducer }
 );
 
 singleSpa.registerApplication(
   '@00jfb00/planets',
-  () => import("@00jfb00/planets"),
+  () => import("@00jfb00/mf-planets"),
   showWhenPrefix(['/planets']),
   { Reducer },
 );

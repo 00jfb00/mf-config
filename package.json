@@ -1,0 +1,47 @@
+{
+  "name": "@00jfb00/config",
+  "author": "Julio Brandao",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/00jfb00/mf-config.git"
+  },
+  "homepage": "https://bitbucket.org/00jfb00/mf-config#readme",
+  "main": "root-application.js",
+  "license": "ISC",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "serve": "webpack-dev-server --port 9000",
+    "start": "node server.js",
+    "build": "webpack --config webpack.config.js -p",
+    "lint": "eslint . --ext .js --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.8.3",
+    "babel-eslint": "10.0.3",
+    "babel-loader": "8.0.6",
+    "clean-webpack-plugin": "3.0.0",
+    "copy-webpack-plugin": "5.1.1",
+    "css-loader": "3.4.2",
+    "eslint": "6.8.0",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-loader": "3.0.3",
+    "eslint-plugin-import": "2.20.1",
+    "html-webpack-plugin": "3.2.0",
+    "webpack": "4.41.5",
+    "webpack-cli": "3.3.10",
+    "webpack-dev-server": "3.10.1",
+    "redux-devtools": "^3.5.0",
+    "redux-devtools-extension": "^2.13.8"
+  },
+  "dependencies": {
+    "@00jfb00/planets": "1.0.9",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.3.0",
+    "single-spa": "4.4.2",
+    "zone.js": "0.10.2"
+  }
+}
